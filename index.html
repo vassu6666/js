@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Animations</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		
+		div
+		{
+			background: linear-gradient(120deg,red,aqua);
+			width: 100px;
+			height: 90px;
+			position: relative;
+			border-radius: 50%;
+			animation: football 5s linear 0s 5 normal;
+			transition: all 10s;
+		}
+		@keyframes football
+		{
+			0%
+			{
+				top: 0px;
+				left: 0px;
+			}
+			20%
+			{
+				top: 200px;
+				left: 375px;
+			}
+			60%
+			{
+				top:0px;
+				left: 750px;
+			}
+			80%
+			{
+				top: 200px;
+				left: 1125px;
+			}
+			100%
+			{
+				top: 0px;
+				left: 1500px;
+			}
+		}
+        
+
+	</style>
+</head>
+<body>
+	<div> </div>
+
+</body>
+</html>
